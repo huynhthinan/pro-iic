@@ -1,0 +1,160 @@
+/* =========================================================
+	下固定バナー
+	プレフィックス：bfb（bazubu-fixed-banner）
+========================================================= */
+
+/* PC表示
+--------------------------------------------------------- */
+
+/* テキストエリア＋ボタン */
+.bfb-common-cta {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background: rgba(222, 222, 222, 0.8);
+	width: 100%;
+	display: block;
+	z-index: 9999;
+}
+
+@media screen and (max-width: 767px) {
+	.bfb-common-cta {
+		display: none;
+	}
+}
+
+.bfb-common-cta .bfb-cta-wrap {
+	position: relative;
+}
+
+.bfb-common-cta .bfb-cta-wrap .bfb-contact {
+	overflow: hidden;
+	max-width: 640px;
+	margin: 8px auto;
+}
+
+@media screen and (max-width: 767px) {
+	.bfb-common-cta .bfb-cta-wrap .bfb-contact {
+		width: 100%;
+		padding: 0 8px;
+	}
+}
+
+.bfb-common-cta .bfb-cta-wrap .bfb-cta-left {
+	float: left;
+}
+
+@media screen and (max-width: 767px) {
+	.bfb-common-cta .bfb-cta-wrap .bfb-cta-left {
+		width: 100%;
+		float: none;
+		text-align: center;
+	}
+}
+
+.bfb-common-cta .bfb-cta-wrap .bfb-cta-left .bfb-cta-text span {
+	color: #000;
+	font-size: 15px;
+	letter-spacing: 1.5px;
+}
+
+.bfb-common-cta .bfb-cta-wrap .bfb-cta-right {
+	float: right;
+	width: 49%;
+}
+
+@media screen and (max-width: 767px) {
+	.bfb-common-cta .bfb-cta-wrap .bfb-cta-right {
+		float: none;
+		margin: auto;
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.bfb-common-cta .bfb-cta-wrap .bfb-cta-right {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.bfb-common-cta .bfb-cta-wrap .bfb-cta-right .bfb-cta-button {
+		margin: 6px auto 0;
+	}
+}
+
+.bfb-common-cta .bfb-cta-wrap .bfb-cta-right .bfb-cta-button a {
+	color: #fff;
+	font-size: 14px;
+	text-align: center;
+	display: block;
+	padding: 10px 24px;
+	border-radius: 3px;
+	background: #ed6b14;
+	box-shadow:0px 5px 0px 0px #4a2800;
+	-moz-box-shadow:0px 5px 0px 0px #4a2800;
+	-webkit-box-shadow:0px 5px 0px 0px #4a2800;
+	text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+	.bfb-common-cta .bfb-cta-wrap .bfb-cta-right .bfb-cta-button a {
+		padding: 6px 8px;
+	}
+}
+
+.bfb-common-cta .bfb-cta-wrap .bfb-cta-right .bfb-cta-button a .fa {
+	margin-left: 8px;
+}
+
+.bfb-common-cta .bfb-cta-wrap .bfb-cta-right .bfb-cta-button:hover {
+	-webkit-filter: brightness(1.2);
+	-moz-filter: brightness(1.2);
+	-o-filter: brightness(1.2);
+	-ms-filter: brightness(1.2);
+	filter: brightness(1.2);
+}
+
+/* スマホ表示
+--------------------------------------------------------- */
+.bfb-common-cta-sp {
+	display: none;
+}
+
+@media screen and (max-width: 767px) {
+	.bfb-common-cta-sp {
+		display: block;
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		z-index: 9999;
+	}
+}
+
+.bfb-common-cta-sp img {
+	width: 100%;
+}
+
+/* 閉じるボタン
+--------------------------------------------------------- */
+.bfb-common-cta .bfb-close-cta,
+.bfb-common-cta-sp .bfb-close-cta {
+	position: absolute;
+	padding: 2px 0;
+	border-radius: 3px;
+	background: #444;
+	width: 30px;
+	text-align: center;
+	top: -45px;
+	left: 10px;
+}
+
+.bfb-common-cta-sp .bfb-close-cta {
+	top: -38px;
+}
+
+.bfb-common-cta .bfb-close-cta .fa,
+.bfb-common-cta-sp .bfb-close-cta .fa {
+	color: #fff;
+}

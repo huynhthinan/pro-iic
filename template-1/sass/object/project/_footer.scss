@@ -1,0 +1,66 @@
+.site-footer {
+
+	.widget_nav_menu {
+
+		.container {
+
+			@media screen and ( max-width: 767px ){
+				padding: 20px 0;
+			}
+
+
+			ul {
+				text-align: center;
+				
+				@media screen and ( max-width: 425px ){
+					text-align: left;
+				}
+
+				li {
+					margin-right: 0.5em;
+					line-height: 1.0;
+					&:before {
+						content: '\f054';
+						font-family: FontAwesome;
+						font-size: 12px;
+						vertical-align: text-top;
+						line-height: 20px;
+						margin-right: 8px;
+					}
+
+					a {
+						padding-right: 1em;
+						color: #333;
+						font-size: 16px;
+						
+						@media screen and ( max-width: 550px ){
+							font-size: 14px;
+						}						
+
+						&:hover {
+							color: $main-color;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.site-info {
+		background: $main-color;
+		text-align: center;
+
+		.container {
+			padding: 1em;
+
+			p {
+				color: #fff;
+			}
+
+			span {
+				margin: 0 4px;
+				color: #fff;
+			}
+		}
+	}
+}

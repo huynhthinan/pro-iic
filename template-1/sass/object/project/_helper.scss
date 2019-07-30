@@ -1,0 +1,175 @@
+//ページネーション
+.pagination {
+
+	.current {
+		background: $main-color;
+	}
+
+	a {
+		background: #e7e7e7;
+
+		&:hover {
+			background: $main-color;
+		}
+	}
+}
+
+//ページトップ
+
+.pagetop {
+	z-index: 10;
+}
+.pagetop-inner {
+	line-height: 44px;
+
+	@media screen and ( max-width: 991px ){
+		line-height: 33px;
+	}
+}
+
+
+//検索窓
+.wpcf7-submit {
+
+	width: 60%;
+	background: $main-color !important;
+
+	&:hover {
+		background: $hover-color !important;
+	}
+
+	@media screen and ( max-width: 550px ) {
+		width: 100%;
+	}
+	
+}
+
+//検索窓
+.search-form {
+	margin-bottom: 40px;
+	height: 39px;
+
+	input.search-field {
+		padding: 8px 48px 8px 8px !important;
+		font-weight: normal;
+		font-size: 14px;
+		border-radius: 0;
+	}
+
+	input[type=submit] {
+		width: 40px;
+		padding: 0;
+		background: $main-color;
+		font-family: FontAwesome;
+	}
+	input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      color: #797979;
+    }
+    input::-moz-placeholder { /* Firefox 19+ */
+      color: #797979;
+    }
+    input:-ms-input-placeholder { /* IE 10+ */
+      color: #797979;
+    }
+    input:-moz-placeholder { /* Firefox 18- */
+      color: #797979;
+    }
+    input::-webkit-input-selection { /* Chrome/Opera/Safari */
+      color: #797979;
+    }
+    input::-moz-selection { /* Firefox 19+ */
+      color: #797979;
+    }
+    input:-ms-input-selection { /* IE 10+ */
+      color: #797979;
+    }
+    input:-moz-selection { /* Firefox 18- */
+      color: #797979;
+    }
+
+}
+
+//ソーシャルボタンのアイコン
+
+.single {
+
+	.xeory-social-btns {
+
+		ul {
+
+			li {
+
+				a {
+
+					&:before {
+						font-size: 18px;
+						margin-right: 8px;
+					}
+				}
+			}
+		}
+	}
+}
+
+.xeory-social-btns {
+
+	> ul {
+
+		> li.item-facebook {
+
+			a:before{
+				content:"\f09a";
+			}
+		}
+	}
+}
+
+//パンくずのアイコン不要（ホーム以外）
+.xeory-breadcrumbs-list {
+	.xeory-breadcrumbs-item{
+		&:last-child{
+			a:hover{
+				color:$text-color;
+			}
+		}
+	}
+}
+
+.xeory-breadcrumbs-item-current {
+
+	&:before {
+		content: '';
+	}
+
+}
+
+.page-header{
+	padding: 16px;
+    font-size: 24px;
+    background: #fff;
+    margin: 0 0 30px;
+    border:1px solid $border-color;
+    font-weight: bold;
+    @media screen and ( max-width: 550px ){
+    	font-size: 20px;
+    	padding:12px;
+    }
+}
+
+.entry-header, 
+.entry-content, 
+.entry-summary, 
+.entry-footer, 
+.post-cta-header, 
+.post-cta-body-inner, 
+.post-cta-footer, 
+.post-author, 
+.underpost-widget{
+	padding-left: 40px;
+	padding-right: 40px;
+}
+.wpcf7-form{
+	textarea{
+		width: 100% !important;
+	}
+}

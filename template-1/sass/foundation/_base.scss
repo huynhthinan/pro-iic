@@ -1,0 +1,268 @@
+/* =========================================================
+ Base style
+========================================================= */
+
+body {
+	background: #fff;
+	word-break: break-all;
+	font-family: $font-sans;
+	color: $text-color;
+
+	@media screen and ( max-width: $max-tb ) {
+		padding-top: 0 !important;
+	}
+
+}
+
+a {
+	color: $main-color;
+	transition: all ease-in-out .3s;
+
+	&:hover {
+		color: $hover-color;
+	}
+}
+
+.single {
+
+	.entry-content {
+
+		a {
+			text-decoration: underline;
+		}
+	}
+}
+
+.site-title {
+
+	a {
+		font-weight: bold;
+	}
+}
+
+/* main layout
+--------------------------------------------------------- */
+
+.site {
+	position: relative;
+}
+
+.container {
+	max-width: $wrap-width;
+	width: auto;
+	margin: 0 auto;
+
+	@media screen and ( max-width: $max-lp ) {
+		margin: 0 24px;
+	}
+	@media screen and ( max-width: $max-tb ) {
+		margin: 0 16px;
+	}
+	@media screen and ( max-width: $sp-width ) {
+		margin: 0 10px;
+	}
+}
+
+.site-content{
+
+	@media screen and ( max-width: $max-tb ) {
+		padding:16px 0 0;
+	}
+}
+
+.archive, .search {
+
+	.site-content {
+		padding: 24px 0 0;
+	}
+}
+
+/*------ TOC ------*/
+#toc_container {
+	margin: 0 0 40px 0;
+	padding: 32px;
+	width: 100% !important;
+
+	@media screen and (max-width: 550px) {
+		padding: 16px;
+	}
+}
+
+.toc_number {
+	display: none;
+}
+
+.toc_list {
+	li {
+		&:before {
+			content: none !important;
+		}
+	}
+}
+
+/*------ bzb-sns ------*/
+#___plusone_0, #___plusone_1 {
+	width: 63px !important;
+}
+
+/*------ header-snsボタン ------*/
+#header-sns {
+	display: none;
+}
+
+/*------ 記事下twitterウィジェット ------*/
+.xeory-social-twitter {
+	width: auto;
+	display: block;
+	text-align: center;
+}
+
+/*------ 記事下SNSボタン ------*/
+.xeory-social-btns > ul > li {
+	@media screen and (max-width: 767px) {
+		width: 50% !important;
+		padding: 0 !important;
+
+		&:nth-child(1) {
+			> a {
+				margin: 0 10px 10px 0;
+			}
+		}
+
+		&:nth-child(2) {
+			> a {
+				margin: 0 0 10px 0;
+			}
+		}
+
+		&:nth-child(3) {
+			> a {
+				margin: 0 10px 0 0;
+			}
+		}
+
+		&:nth-child(4) {
+			> a {
+				margin: 0;
+			}
+		}
+	}
+}
+
+/*------ サイドバーSNSボタン ------*/
+#secondary {
+	.sns-list {
+		text-align: center;
+		margin: 36px 0 0 0;
+
+		li {
+			border: 0;
+			display: inline-block;
+			font-size: 18px;
+			padding: 0 7px;
+
+			a {
+				color: #fff;
+				display: block;
+				width: 40px;
+				height: 40px;
+				line-height: 36px;
+				margin-left: 0;
+				border-radius: 100%;
+
+				&:hover {
+					background: #fff;
+				}
+			}
+		}
+
+		.post-sns-facebook {
+			a{
+				border: 2px solid #3b5998;
+				background: #3b5998;
+
+				&:hover {
+					border: 2px solid #3b5998;
+					color: #3b5998;
+				}
+			}
+		}
+
+		.post-sns-twitter {
+			a{
+				border: 2px solid #43ccf7;
+				background: #43ccf7;
+
+				&:hover {
+					border: 2px solid #43ccf7;
+					color: #43ccf7;
+				}
+			}
+		}
+
+		.post-sns-google {
+			a{
+				border: 2px solid #d23f2d;
+				background: #d23f2d;
+
+				&:hover {
+					border: 2px solid #d23f2d;
+					color: #d23f2d;
+				}
+			}
+		}
+
+		.post-sns-feedly {
+			a{
+				border: 2px solid #87c031;
+				background: #87c031;
+
+				&:hover {
+					border: 2px solid #87c031;
+					color: #87c031;
+				}
+			}
+		}
+	}
+}
+
+/*------ 404ページの検索フォーム ------*/
+.no-results {
+	.search-form {
+		margin-bottom: 40px;
+	}
+}
+
+
+/*------ pagetop ------*/
+.pagetop {
+	z-index: 100;
+}
+
+/*------ sp-navボタン ------*/
+.sp-nav-btn {
+	position: absolute;
+	top: -18px;
+	right: 14px;
+	overflow: auto;
+
+	&:before {
+		display: block;
+		font-size: 32px;
+		text-align: center;
+	}
+
+	&:after {
+		content: "MENU";
+		font-size: 10px;
+		display: block;
+		margin: -12px auto 0 auto;
+		text-align: center;
+	}
+}
+
+/*------ sp-nav ------*/
+.sp-nav.active {
+	display: block;
+	z-index: 200;
+}
